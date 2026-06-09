@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索影片 - 日韩精品影视</title>
+  <meta name="description" content="搜索日韩视频、免费电影、最新电视剧和高清免费视频内容。">
+  <meta name="keywords" content="日韩视频,免费电影,最新电视剧,在线观看,高清视频,精品影视,日剧,韩剧,免费观看,视频网站">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="./index.html" aria-label="日韩精品影视首页">
+      <span class="site-logo__mark">▶</span>
+      <span>日韩精品影视</span>
+    </a>
+    <nav class="site-nav" data-nav>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+    </nav>
+    <form class="site-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索片名、地区、标签" aria-label="搜索片名、地区、标签">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="mobile-toggle" type="button" data-nav-toggle aria-label="展开导航">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<main class="page-main">
+  <section class="page-hero page-hero--small">
+    <p>搜索筛选</p>
+    <h1>查找你想看的影片</h1>
+    <span>可输入片名、地区、年份、类型、标签进行搜索。</span>
+  </section>
+  <section class="search-page">
+    <form class="search-page__form" action="search.html" method="get" data-search-form>
+      <input type="search" name="q" placeholder="输入关键词" data-search-input>
+      <button type="submit">搜索</button>
+    </form>
+    <p class="search-page__count" data-search-count></p>
+    <div class="movie-grid movie-grid--wide" id="search-results" data-search-results></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div>
+      <a class="site-logo site-logo--footer" href="./index.html">
+        <span class="site-logo__mark">▶</span>
+        <span>日韩精品影视</span>
+      </a>
+      <p>提供最新最全的日韩精品视频在线观看，包含热门日剧、韩剧、电影等高清内容。免费观看，满足你的观影需求，打造最佳的视频观看体验。</p>
+    </div>
+    <div>
+      <h2>热门分类</h2>
+      <div class="footer-links"><a href="category-japan-korea.html">日韩精选</a><a href="category-chinese-movies.html">华语热播</a><a href="category-cantonese-hk.html">港台粤语</a><a href="category-western-hits.html">欧美大片</a><a href="category-sci-fi-disaster.html">科幻灾难</a><a href="category-mystery-thriller.html">悬疑惊悚</a></div>
+    </div>
+    <div>
+      <h2>快捷入口</h2>
+      <div class="footer-links">
+        <a href="./categories.html">分类总览</a>
+        <a href="./ranking.html">热度排行</a>
+        <a href="./search.html">搜索筛选</a>
+      </div>
+    </div>
+  </div>
+  <p class="site-footer__copy">© 2026 日韩精品影视</p>
+</footer>
+<script src="./assets/js/app.js" defer></script>
+<script src="./assets/js/search-data.js" defer></script>
+<script src="./assets/js/search.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
